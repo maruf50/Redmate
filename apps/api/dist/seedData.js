@@ -18,9 +18,9 @@ function seedInMemoryData() {
         {
             id: "u_demo",
             email: "demo@studygroupfinder.app",
-            username: "Aisha",
-            university: "State University",
-            department: "Computer Science",
+            username: "Maruf",
+            university: "United International University",
+            department: "CSE",
             passwordHash: bcryptjs_1.default.hashSync(DEMO_PASSWORD, 10),
             interests: [
                 { topic: "Algebra", level: "intermediate" },
@@ -201,7 +201,7 @@ function seedInMemoryData() {
         {
             id: "m_global_2",
             userId: "u_demo",
-            username: "Aisha",
+            username: "Maruf",
             groupId: null,
             content: "I can join after 8 PM.",
             createdAt: toIso(38)
@@ -217,7 +217,7 @@ function seedInMemoryData() {
         {
             id: "m_group_2",
             userId: "u_demo",
-            username: "Aisha",
+            username: "Maruf",
             groupId: "g_alg",
             content: "Let us do 10 equations in 20 minutes.",
             createdAt: toIso(26)
@@ -232,5 +232,5 @@ function seedInMemoryData() {
 exports.DEMO_CREDENTIALS = {
     email: "demo@studygroupfinder.app",
     password: DEMO_PASSWORD,
-    username: "Aisha"
+    username: "Maruf"
 };
