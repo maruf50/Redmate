@@ -1,4 +1,4 @@
-# StudyGroupFinder
+# Redmate
 
 Initial implementation of a study helper platform with:
 - Account registration/login
