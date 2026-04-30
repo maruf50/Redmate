@@ -78,6 +78,7 @@ npm run dev
 
 This first implementation uses an in-memory store for speed. Data resets when the API server restarts.
 
-## Next Suggested Backend Upgrade
+## Next Suggested Backend Upgrade Plan
 
-Switch to PostgreSQL + Prisma for persistent data and production-safe constraints.
+Switching to PostgreSQL + Prisma for persistent data and production-safe constraints.
+
