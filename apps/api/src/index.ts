@@ -36,6 +36,10 @@ const io = new Server(server, {
 app.use(cors({ origin: frontendUrl, credentials: true }));
 app.use(express.json());
 
+app.get("/", (_req, res) => {
+  res.json({ ok: true, service: "StudyGroupFinder API" });
+});
+
 type AuthedRequest = Request & {
   user?: User;
 };
@@ -573,6 +577,10 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(port, () => {
-  console.log(`API listening on http://localhost:${port}`);
-});
+if (!process.env.VERCEL) {
+  server.listen(port, () => {
+    console.log(`API listening on http://localhost:${port}`);
+  });
+}
+
+export default app;
